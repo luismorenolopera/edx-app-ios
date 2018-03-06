@@ -125,7 +125,7 @@ git_command = '/usr/bin/env git'
         """
         if self.apply_patches():
             self.create_project_properties()
-            self.update_plist()
+            #self.update_plist()
             self.copy_resources()
         else:
             logging.error("Update aborted until patches are repaired.")
