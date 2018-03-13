@@ -126,8 +126,8 @@ class CourseCatalogDetailViewController: UIViewController {
                 self?.environment.analytics.trackCourseEnrollment(courseId:courseID, name: AnalyticsEventName.CourseEnrollmentSuccess.rawValue, displayName: AnalyticsDisplayName.EnrolledCourseSuccess.rawValue)
                 self?.showCourseScreen(message: Strings.findCoursesEnrollmentSuccessfulMessage)
             }
-            else {
-                self?.showOverlay(withMessage: Strings.findCoursesEnrollmentErrorDescription)
+             else {
++                UIApplication.shared.openURL(URL(string: "https://openedx.unilearn.edu.sg/courses/"+courseID+"/about")!)
             }
             completion()
         }

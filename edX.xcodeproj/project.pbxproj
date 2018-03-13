@@ -3646,7 +3646,7 @@
 						TestTargetID = BECB7B0A1924C0C3009C77F1;
 					};
 					BECB7B0A1924C0C3009C77F1 = {
-						DevelopmentTeam = 87YSD7KU3T;
+						DevelopmentTeam = H54Z2HU792;;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -3665,7 +3665,7 @@
 						};
 					};
 					BECB7B2B1924C0C3009C77F1 = {
-						DevelopmentTeam = 87YSD7KU3T;
+						DevelopmentTeam = H54Z2HU792;;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BECB7B0A1924C0C3009C77F1;
