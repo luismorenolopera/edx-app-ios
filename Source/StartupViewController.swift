@@ -119,6 +119,7 @@ class StartupViewController: UIViewController, InterfaceOrientationOverriding {
     
     private func setupSearchView() {
         view.addSubview(searchView)
+        /*
         let borderStyle = BorderStyle(cornerRadius: .Size(CornerRadius), width: .Size(1), color: environment.styles.primaryBaseColor())
         searchView.applyBorderStyle(style: borderStyle)
 
@@ -144,6 +145,7 @@ class StartupViewController: UIViewController, InterfaceOrientationOverriding {
         }
         
         let textStyle = OEXTextStyle(weight: .normal, size: .large, color: environment.styles.primaryBaseColor())
+        
         let searchTextField = UITextField()
         searchTextField.accessibilityIdentifier = "StartUpViewController:search-textfield"
         searchTextField.delegate = self
@@ -157,7 +159,7 @@ class StartupViewController: UIViewController, InterfaceOrientationOverriding {
             make.leading.equalTo(searchImageView.snp.trailing).offset(StandardHorizontalMargin)
             make.trailing.equalTo(searchView).offset(-StandardHorizontalMargin)
             make.centerY.equalTo(searchView)
-        }
+        }*/
     }
 
     private func setupBottomBar() {

@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-
-#import "edX-Swift.h"
-
 #import "OEXConfig.h"
 #import "OEXFabricConfig.h"
 #import "OEXFacebookConfig.h"
@@ -18,6 +15,8 @@
 #import "OEXNewRelicConfig.h"
 #import "OEXSegmentConfig.h"
 #import "OEXZeroRatingConfig.h"
+#import "edX-Swift.h"
+
 
 @interface OEXConfigTests : XCTestCase
 @end

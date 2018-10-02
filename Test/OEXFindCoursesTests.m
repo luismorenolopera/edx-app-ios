@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-#import "edX-Swift.h"
 #import "OEXEnvironment.h"
 #import "OEXConfig.h"
+#import "edX-Swift.h"
 #import "OEXNetworkManager.h"
 #import "OEXFindCoursesViewController.h"
 #import "OEXCourseInfoViewController.h"
