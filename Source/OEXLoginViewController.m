@@ -455,6 +455,12 @@
         return;
     }
     
+    if ([provider isKindOfClass:[SamlAuthProvider class]]) {
+        SamlAuthProvider *samlProvider = provider;
+        [samlProvider initializeSamlViewControllerWithView:self];
+        return;
+    }
+    
     OEXURLRequestHandler handler = ^(NSData* data, NSHTTPURLResponse* response, NSError* error) {
         if(!response) {
             [self loginFailedWithErrorMessage:[Strings invalidUsernamePassword] title:nil];
