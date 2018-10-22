@@ -2,7 +2,7 @@
 //  SamlLoginViewController.swift
 //  edX
 //
-//  Created by andrey.cano on 10/11/18.
+//  Created by andrey.canon on 10/11/18.
 //  Copyright © 2018 edX. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  SamlAuthProvider.swift
 //  edX
 //
-//  Created by user909217 on 10/10/18.
+//  Created by andrey.canon on 10/10/18.
 //  Copyright © 2018 edX. All rights reserved.
 //
 
