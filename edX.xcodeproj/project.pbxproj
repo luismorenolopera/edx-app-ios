@@ -2330,6 +2330,7 @@
 				6926CDA91D59BE3600A16E22 /* ic_seek_thumb.png */,
 				6926CDAA1D59BE3600A16E22 /* ic_seek_thumb@2x.png */,
 				696089281D53935500EE66DD /* courseCertificate.png */,
+				69ECC5D71D50D1170030CF87 /* ic_cancel@3x.png */,
 				696089291D53935500EE66DD /* courseCertificate@2x.png */,
 				6960892A1D53935500EE66DD /* courseCertificate@3x.png */,
 				69ECC5B71D50D1170030CF87 /* arrow_next@2x.png */,
@@ -2352,7 +2353,6 @@
 				69ECC5D31D50D1170030CF87 /* downloading.png */,
 				69ECC5D41D50D1170030CF87 /* ic_back.png */,
 				69ECC5D61D50D1170030CF87 /* ic_cancel.png */,
-				69ECC5D71D50D1170030CF87 /* ic_cancel@3x.png */,
 				69ECC5D81D50D1170030CF87 /* ic_circle.png */,
 				69ECC5D91D50D1170030CF87 /* ic_download.png */,
 				69ECC5DA1D50D1170030CF87 /* ic_download_arrow.png */,
@@ -4007,7 +4007,7 @@
 						TestTargetID = BECB7B0A1924C0C3009C77F1;
 					};
 					BECB7B0A1924C0C3009C77F1 = {
-						DevelopmentTeam = 87YSD7KU3T;
+						DevelopmentTeam = H54Z2HU792;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -5232,7 +5232,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				DEVELOPMENT_TEAM = 87YSD7KU3T;
+				DEVELOPMENT_TEAM = H54Z2HU792;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5249,7 +5249,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.unilearn.openedx;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.unilearn;
 				PRODUCT_MODULE_NAME = "$(SWIFT_MODULE_NAME)";
 				PRODUCT_NAME = edX;
 				PROVISIONING_PROFILE = "";
@@ -5679,7 +5679,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				DEVELOPMENT_TEAM = 87YSD7KU3T;
+				DEVELOPMENT_TEAM = H54Z2HU792;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5695,7 +5695,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.unilearn.openedx;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.unilearn;
 				PRODUCT_NAME = edX;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5719,7 +5719,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				DEVELOPMENT_TEAM = 87YSD7KU3T;
+				DEVELOPMENT_TEAM = H54Z2HU792;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5736,7 +5736,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.unilearn.openedx;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.unilearn;
 				PRODUCT_NAME = edX;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
