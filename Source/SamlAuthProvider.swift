@@ -36,7 +36,7 @@ import Foundation
     }
     
     func initializeSamlViewController(view:UIViewController) {        
-        let samlLoginViewController = SamlLoginViewController(environment: environment, loginViewController: view as! OEXLoginViewController)
+        let samlLoginViewController = SamlLoginViewController(environment: environment)
         let navigationController = UINavigationController(rootViewController: samlLoginViewController)
         view.present(navigationController, animated: true, completion: nil)
     }
