@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>edX.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>157348077DBA1E05A3C59961C0264C14A54986C8</string>
+				<key>dateExpires</key>
+				<string>3/5/19</string>
+				<key>type</key>
+				<string>iOS Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>157348077DBA1E05A3C59961C0264C14A54986C8</string>
+						<key>dateExpires</key>
+						<string>3/5/19</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>name</key>
+					<string>edXCore.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>87YSD7KU3T</string>
+						<key>name</key>
+						<string>edunext s.a.s.</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>87YSD7KU3T.io.edunext.albalagh</string>
+				<key>aps-environment</key>
+				<string>development</string>
+				<key>com.apple.developer.associated-domains</key>
+				<array>
+					<string>applinks:edx.test-app.link</string>
+					<string>applinks:edx.app.link</string>
+					<string>applinks:edx-alternate.app.link</string>
+					<string>applinks:edx-alternate.test-app.link</string>
+				</array>
+				<key>com.apple.developer.team-identifier</key>
+				<string>87YSD7KU3T</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>87YSD7KU3T.org.edx.mobile</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>edX.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>cd47e4a8-9ac3-469c-b68b-c041cebb61ec</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: io.edunext.albalagh</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>87YSD7KU3T</string>
+				<key>name</key>
+				<string>edunext s.a.s.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

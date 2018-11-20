@@ -127,11 +127,8 @@ class CourseCatalogDetailViewController: UIViewController, InterfaceOrientationO
                 self?.environment.analytics.trackCourseEnrollment(courseId:courseID, name: AnalyticsEventName.CourseEnrollmentSuccess.rawValue, displayName: AnalyticsDisplayName.EnrolledCourseSuccess.rawValue)
                 self?.showCourseScreen(message: Strings.findCoursesEnrollmentSuccessfulMessage)
             }
-            else if response.response?.httpStatusCode.is4xx ?? false {
-                self?.showCourseEnrollmentFailureAlert()
-            }
             else {
-                self?.showOverlay(withMessage: Strings.findCoursesEnrollmentErrorDescription)
+                UIApplication.shared.openURL(URL(string: "https://learn.albalaghacademy.com/courses/"+courseID+"/about")!)
             }
             completion()
         }

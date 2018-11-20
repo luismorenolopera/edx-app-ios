@@ -1,14 +1,14 @@
 {
     "primaryXDarkColor":"#003654",
     "primaryDarkColor":"#005483",
-    "primaryBaseColor":"#0079BC",
-    "primaryLightColor":"#4CA1D0",
+    "primaryBaseColor":"#79012E",
+    "primaryLightColor":"#931141",
     "primaryXLightColor":"#D9EBF5",
     
     "secondaryXDarkColor":"#5B283F",
     "secondaryDarkColor":"#8E3E62",
     "secondaryBaseColor":"#CB598D",
-    "secondaryLightColor":"#DA8AAF",
+    "secondaryLightColor":"#79012E",
     "secondaryXLightColor":"#EFCDDC",
     
     "neutralBlack":"#101010",
