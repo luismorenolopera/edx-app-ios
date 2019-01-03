@@ -38,6 +38,7 @@
     
     [self.signInButton setTitle:[Strings loginSplashSignIn] forState:UIControlStateNormal];
     [self.signUpButton applyButtonStyleWithStyle:[self.environment.styles filledPrimaryButtonStyle] withTitle:[Strings loginSplashSignUp]];
+    [self.signInButton applyButtonStyleWithStyle:[self.environment.styles filledPrimaryButtonStyle] withTitle:[Strings loginSplashSignIn]];
     [self.signInButton.titleLabel setFont:[self.environment.styles boldSansSerifOfSize:14.0f]];
     [self.signInButton setAccessibilityIdentifier:@"LoginSpashViewController:sign-in-button"];
     [self.signInButton setAccessibilityIdentifier:@"LoginSpashViewController:sign-up-button"];
