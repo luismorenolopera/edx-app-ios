@@ -849,6 +849,7 @@
 		E40AEA73218D074700049C39 /* YoutubeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40AEA72218D074600049C39 /* YoutubeConfig.swift */; };
 		E40AEA75218D076200049C39 /* YoutubeVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40AEA74218D076200049C39 /* YoutubeVideoPlayer.swift */; };
 		E473C3D0215E90E800D2ADEB /* YoutubeVideoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E473C3CF215E90E800D2ADEB /* YoutubeVideoPlayerTests.swift */; };
+		E4EE16F121DECAE400096F29 /* edX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BECB7B161924C0C3009C77F1 /* edX-Info.plist */; };
 		F22A0ABB1CE60D5E00D50DFF /* NetworkManager+Authenticators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A0ABA1CE60D5E00D50DFF /* NetworkManager+Authenticators.swift */; };
 		F22A0ABD1CE660B300D50DFF /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A0ABC1CE660B300D50DFF /* LoginApi.swift */; };
 		F2586E061CF5F8C7007C1118 /* NetworkManager+AuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2808CF91CF374FA002EAD1D /* NetworkManager+AuthenticatorTests.swift */; };
@@ -1790,7 +1791,7 @@
 		BECB7B0E1924C0C3009C77F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BECB7B101924C0C3009C77F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BECB7B121924C0C3009C77F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		BECB7B161924C0C3009C77F1 /* edX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "edX-Info.plist"; sourceTree = "<group>"; };
+		BECB7B161924C0C3009C77F1 /* edX-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "edX-Info.plist"; sourceTree = "<group>"; };
 		BECB7B1A1924C0C3009C77F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BECB7B1C1924C0C3009C77F1 /* edX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "edX-Prefix.pch"; sourceTree = "<group>"; };
 		BECB7B1D1924C0C3009C77F1 /* OEXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OEXAppDelegate.h; sourceTree = "<group>"; };
@@ -1880,6 +1881,8 @@
 		E40AEA72218D074600049C39 /* YoutubeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeConfig.swift; sourceTree = "<group>"; };
 		E40AEA74218D076200049C39 /* YoutubeVideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeVideoPlayer.swift; sourceTree = "<group>"; };
 		E473C3CF215E90E800D2ADEB /* YoutubeVideoPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoPlayerTests.swift; sourceTree = "<group>"; };
+		E4EE16F021DECAE400096F29 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E4EE16F221DECAFF00096F29 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E638C306F51AA4045D332D34 /* Pods-edXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-edXTests/Pods-edXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F22A0ABA1CE60D5E00D50DFF /* NetworkManager+Authenticators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkManager+Authenticators.swift"; sourceTree = "<group>"; };
 		F22A0ABC1CE660B300D50DFF /* LoginApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = SOURCE_ROOT; };
@@ -4067,6 +4070,7 @@
 			knownRegions = (
 				en,
 				"es-419",
+				he,
 			);
 			mainGroup = BECB7B021924C0C3009C77F1;
 			productRefGroup = BECB7B0C1924C0C3009C77F1 /* Products */;
@@ -4174,6 +4178,7 @@
 				9ED269D21AF114B900328A34 /* OEXLoginViewController.storyboard in Resources */,
 				2245C9F8209C591B0097B23F /* MobileAppEula.htm in Resources */,
 				B71AA1AA20CEF64D00700C5E /* biology@3x.png in Resources */,
+				E4EE16F121DECAE400096F29 /* edX-Info.plist in Resources */,
 				B71AA1A420CEF64D00700C5E /* communication@3x.png in Resources */,
 				69ECC62C1D50D1170030CF87 /* ic_back.png in Resources */,
 				69ECC60E1D50D1170030CF87 /* Icon-60@3x.png in Resources */,
@@ -5179,6 +5184,7 @@
 			children = (
 				773BE0001AAA07DD0074C3CA /* en */,
 				E08CC57A1F33269C0092ACED /* es-419 */,
+				E4EE16F021DECAE400096F29 /* he */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -5188,6 +5194,7 @@
 			children = (
 				E04A932A1F13846B00D4615D /* en */,
 				E08CC57B1F33269C0092ACED /* es-419 */,
+				E4EE16F221DECAFF00096F29 /* he */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
