@@ -78,6 +78,7 @@ PODS:
     - GoogleAnalytics (~> 3.14)
     - GoogleIDFASupport (~> 3.14)
   - Smartling.i18n (1.0.13)
+  - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
   - Analytics (~> 3.0.0)
@@ -96,6 +97,7 @@ DEPENDENCIES:
   - OHHTTPStubs (~> 4.0)
   - Segment-GoogleAnalytics (~> 1.0.0)
   - Smartling.i18n (~> 1.0)
+  - youtube-ios-player-helper (~> 0.1.6)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -128,6 +130,7 @@ SPEC REPOS:
     - OHHTTPStubs
     - Segment-GoogleAnalytics
     - Smartling.i18n
+    - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
   Analytics: b342fb4f43fa4f97ca6f4358b44d3295217ba294
@@ -159,7 +162,8 @@ SPEC CHECKSUMS:
   OHHTTPStubs: b393565822317305b87a1440d4c7aff131679f66
   Segment-GoogleAnalytics: ffea73c99196720b28b58ea93bcc0e6d11f172e1
   Smartling.i18n: 03ef7a5643965212c6ca9ed7d65385950ca4a989
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 6da2c9a923d7d347bb62aa878374d041492dff17
+PODFILE CHECKSUM: 7aa53c52fd0936792c3f4e7d1be72b6adc8c1ed9
 
 COCOAPODS: 1.5.3
