@@ -33,6 +33,8 @@ public class CourseContentPageViewController : UIPageViewController, UIPageViewC
     
     public private(set) var blockID : CourseBlockID?
     
+    var videoPlayer: VideoPlayer
+    
     public var courseID : String {
         return courseQuerier.courseID
     }
@@ -49,6 +51,8 @@ public class CourseContentPageViewController : UIPageViewController, UIPageViewC
     ///Removes the ViewControllers from memory in case of a memory warning
     private let cacheManager : BlockViewControllerCacheManager
     private var transitionInProgress: Bool = false
+    private var languageOptionsButton = UIBarButtonItem(barButtonSystemItem: .add, target: nil, action:nil)
+    
     public init(environment : Environment, courseID : CourseBlockID, rootID : CourseBlockID?, initialChildID: CourseBlockID? = nil, forMode mode: CourseOutlineMode) {
         self.environment = environment
         self.blockID = rootID
@@ -59,6 +63,7 @@ public class CourseContentPageViewController : UIPageViewController, UIPageViewC
         
         cacheManager = BlockViewControllerCacheManager()
         courseOutlineMode = mode
+        self.videoPlayer = VideoPlayer(environment: environment as! VideoPlayer.Environment)
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         self.setViewControllers([initialLoadController], direction: .forward, animated: false, completion: nil)
         self.dataSource = self
@@ -96,7 +101,7 @@ public class CourseContentPageViewController : UIPageViewController, UIPageViewC
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.languageOptionsButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action:#selector(CourseContentPageViewController.showLanguageOptions))
         view.backgroundColor = OEXStyles.shared().standardBackgroundColor()
         
         
@@ -211,6 +216,12 @@ public class CourseContentPageViewController : UIPageViewController, UIPageViewC
                 // animation to make the push transition work right
                 let actions : () -> Void = {
                     self?.navigationItem.title = item.block.displayName
+                    if self?.videoPlayer is YoutubeVideoPlayer{
+                        let transcript = (self?.videoPlayer as! YoutubeVideoPlayer).transcripts
+                        if transcript.count > 1{
+                            self?.navigationItem.rightBarButtonItem = self?.languageOptionsButton
+                        }
+                    }
                 }
                 if let navigationBar = self?.navigationController?.navigationBar, let _ = self?.navigationItem.title {
                     let animated = self?.navigationItem.title != nil
@@ -333,6 +344,10 @@ public class CourseContentPageViewController : UIPageViewController, UIPageViewC
                     cacheManager.addToCache(viewController: viewController, blockID: block.blockID)
                 }
                 blockViewController = viewController
+                
+                if blockViewController is VideoBlockViewController {
+                    self.videoPlayer = (blockViewController as! VideoBlockViewController).videoController
+                }
             }
             else {
                 blockViewController = UIViewController()
@@ -390,6 +405,20 @@ public class CourseContentPageViewController : UIPageViewController, UIPageViewC
         if let block = contentLoader.value?.peekPrev()?.block {
             preloadBlock(block: block)
         }
+    }
+    
+    func showLanguageOptions() {
+        let transcript = (self.videoPlayer as! YoutubeVideoPlayer).transcripts
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        for (key, value) in transcript{
+            let language = key as! String
+            let locale = NSLocale(localeIdentifier: language)
+            alert.addAction(UIAlertAction(title: locale.displayName(forKey: NSLocale.Key.identifier, value: language), style: .default) { _ in
+                (self.videoPlayer as! YoutubeVideoPlayer).setCaption(language: language)
+            })
+        }
+        self.present(alert, animated: true)
     }
 }
 

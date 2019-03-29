@@ -11,6 +11,7 @@ class YoutubeVideoPlayer: VideoPlayer{
     let playerView: YTPlayerView
     let background: UIColor
     var videoId: String
+    var transcripts: [AnyHashable: Any]
 
     override var currentTime: TimeInterval {
         return Double(playerView.currentTime())
@@ -19,6 +20,7 @@ class YoutubeVideoPlayer: VideoPlayer{
         playerView = YTPlayerView()
         videoId = String()
         background = environment.styles.neutralWhite()
+        transcripts = Dictionary<AnyHashable,Any>()
         super.init(environment: environment)
         playerView.delegate = self
     }
@@ -42,6 +44,10 @@ class YoutubeVideoPlayer: VideoPlayer{
         UINavigationBar.appearance().barTintColor = .black
         t_captionLanguage = String(Locale.preferredLanguages[0].prefix(2))
     }
+    
+    func setCaption(language: String){
+        t_captionLanguage = language
+    }
 
     func videoPlayerProtraitView(portraitView: Bool){
         let screenSize: CGRect = UIScreen.main.bounds
@@ -56,6 +62,7 @@ class YoutubeVideoPlayer: VideoPlayer{
 
     override func play(video: OEXHelperVideoDownload) {
         super.setVideo(video: video)
+        self.transcripts = (video.summary?.transcripts)!
         guard let videoUrl = video.summary?.videoURL else{
             Logger.logError("YOUTUBE_VIDEO", "invalid url")
             return
