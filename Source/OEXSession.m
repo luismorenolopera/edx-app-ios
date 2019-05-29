@@ -154,7 +154,6 @@ static NSString* OEXSessionClearedCache = @"OEXSessionClearedCache";
 }
 
 - (void)saveSessionCookies:(NSHTTPCookie*) sessionCookie userDetails:(OEXUserDetails*)userDetails {
-    [self.credentialStore clear];
     [self.credentialStore saveSessionCookie:sessionCookie userDetails:userDetails];
     
     self.sessionCookie = sessionCookie;
@@ -168,7 +167,7 @@ static NSString* OEXSessionClearedCache = @"OEXSessionClearedCache";
 - (BOOL)validCookie {
     NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
     for (NSHTTPCookie *cookie in [storage cookies]) {
-        if([cookie.name isEqualToString:@"sessionid"]) {
+        if([cookie.name containsString:@"sessionid"]) {
             NSDate *expiresDate = [cookie expiresDate];
             NSDate *currentDate = [NSDate date];
             NSComparisonResult result = [currentDate compare:expiresDate];

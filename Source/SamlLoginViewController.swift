@@ -64,7 +64,7 @@ import WebKit
                 return
             }
             for cookie in cookies {
-                if cookie.name.elementsEqual("sessionid"){
+                if cookie.name.contains("sessionid"){
                     self.sessionCookie = cookie
                     getUserDetails(sessionCookie: cookie)
 
