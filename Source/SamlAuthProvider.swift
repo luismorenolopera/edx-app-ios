@@ -22,7 +22,7 @@ import Foundation
     }
     
     func displayName() -> String {
-        return "SAML-Login"
+        return environment.config.samlProviderConfig.samlName
     }
 
     func freshAuthButton() -> UIButton {
