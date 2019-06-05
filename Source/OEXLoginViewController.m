@@ -140,7 +140,7 @@
         [providers addObject:[[OEXFacebookAuthProvider alloc] init]];
     }
     if([self isSamlProviderEnabled]) {
-        [providers addObject:[[SamlAuthProvider alloc] initWithEnvironment:self.environment]];
+        [providers addObject:[[SamlAuthProvider alloc] initWithEnvironment:self.environment authEntry:@"login"]];
     }
 
     __weak __typeof(self) owner = self;

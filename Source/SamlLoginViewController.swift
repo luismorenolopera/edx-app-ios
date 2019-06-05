@@ -16,9 +16,11 @@ import WebKit
 
     typealias Environment = OEXConfigProvider & OEXStylesProvider & OEXRouterProvider
     fileprivate let environment: Environment
+    private let authEntry: String
 
-    init(environment: Environment) {
+    init(environment: Environment, authEntry: String) {
         self.environment = environment
+        self.authEntry = authEntry
         super.init(nibName: nil, bundle :nil)
     }
 
@@ -31,7 +33,7 @@ import WebKit
         webView = UIWebView(frame: UIScreen.main.bounds)
         webView.delegate = self
         view.addSubview(webView)
-        let path = NSString.oex_string(withFormat: SAML_PROVIDER_LOGIN_URL, parameters: ["idpSlug": environment.config.samlProviderConfig.samlIdpSlug])
+        let path = NSString.oex_string(withFormat: SAML_PROVIDER_URL, parameters: ["idpSlug": environment.config.samlProviderConfig.samlIdpSlug, "authEntry": authEntry])
         if let url = URL(string: (environment.config.apiHostURL()?.absoluteString)!+path) {
             let request = URLRequest(url: url)
             webView.loadRequest(request)

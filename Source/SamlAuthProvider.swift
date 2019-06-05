@@ -12,9 +12,11 @@ import Foundation
   
     typealias Environment = OEXStylesProvider & OEXConfigProvider & OEXRouterProvider
     private let environment: Environment
+    private let authEntry: String
     
-    init(environment: Environment) {
+    init(environment: Environment, authEntry: String) {
         self.environment = environment
+        self.authEntry = authEntry
     }
     
     func baseColorButton() -> UIColor {
@@ -36,7 +38,7 @@ import Foundation
     }
     
     func initializeSamlViewController(view:UIViewController) {        
-        let samlLoginViewController = SamlLoginViewController(environment: environment)
+        let samlLoginViewController = SamlLoginViewController(environment: environment, authEntry: authEntry)
         let navigationController = UINavigationController(rootViewController: samlLoginViewController)
         view.present(navigationController, animated: true, completion: nil)
     }
