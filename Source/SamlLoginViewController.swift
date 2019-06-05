@@ -108,14 +108,21 @@ import WebKit
                 let dictionary = try? JSONSerialization.jsonObject(with: data!)
                 let userDetails = OEXUserDetails(userDictionary: dictionary as! [AnyHashable : Any])
                 handleSuccessfulLoginWithSaml(userDetails: userDetails)
-            } else if httpResponse.statusCode == 401 {
+            } else if httpResponse.statusCode == 401 && authEntry == "register"{
                 DispatchQueue.main.async {
-                    guard let session = OEXSession.shared() else {
-                        return
-                    }
-                    session.closeAndClear()
                     self.webView.isHidden = false
+                }                
+            } else if httpResponse.statusCode == 401 {
+                guard let session = OEXSession.shared() else {
+                    return
                 }
+                session.closeAndClear()
+                let message = Strings.serviceAccountNotAssociatedMessage(service: environment.config.samlProviderConfig.samlName, platformName: environment.config.platformName(), destinationName: environment.config.platformDestinationName())
+                let alert = UIAlertController(title: Strings.floatingErrorLoginTitle, message: message, preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(alert: UIAlertAction) in
+                    self.dismiss(animated: false, completion: nil)
+                }))
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }
