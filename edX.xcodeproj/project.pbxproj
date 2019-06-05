@@ -850,6 +850,9 @@
 		E40AEA75218D076200049C39 /* YoutubeVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40AEA74218D076200049C39 /* YoutubeVideoPlayer.swift */; };
 		E473C3D0215E90E800D2ADEB /* YoutubeVideoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E473C3CF215E90E800D2ADEB /* YoutubeVideoPlayerTests.swift */; };
 		E4EE16F121DECAE400096F29 /* edX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BECB7B161924C0C3009C77F1 /* edX-Info.plist */; };
+		E495C48B216FBBE9003842C8 /* SamlLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E495C48A216FBBE9003842C8 /* SamlLoginViewController.swift */; };
+		E4A1B744216E9395009ACFC0 /* SAMLConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1B743216E9395009ACFC0 /* SAMLConfig.swift */; };
+		E4A1B748216E9BFA009ACFC0 /* SamlAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1B747216E9BFA009ACFC0 /* SamlAuthProvider.swift */; };
 		F22A0ABB1CE60D5E00D50DFF /* NetworkManager+Authenticators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A0ABA1CE60D5E00D50DFF /* NetworkManager+Authenticators.swift */; };
 		F22A0ABD1CE660B300D50DFF /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A0ABC1CE660B300D50DFF /* LoginApi.swift */; };
 		F2586E061CF5F8C7007C1118 /* NetworkManager+AuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2808CF91CF374FA002EAD1D /* NetworkManager+AuthenticatorTests.swift */; };
@@ -1885,6 +1888,9 @@
 		E473C3CF215E90E800D2ADEB /* YoutubeVideoPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoPlayerTests.swift; sourceTree = "<group>"; };
 		E4EE16F021DECAE400096F29 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E4EE16F221DECAFF00096F29 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E495C48A216FBBE9003842C8 /* SamlLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamlLoginViewController.swift; sourceTree = "<group>"; };
+		E4A1B743216E9395009ACFC0 /* SAMLConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMLConfig.swift; sourceTree = "<group>"; };
+		E4A1B747216E9BFA009ACFC0 /* SamlAuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamlAuthProvider.swift; sourceTree = "<group>"; };
 		E638C306F51AA4045D332D34 /* Pods-edXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-edXTests/Pods-edXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F22A0ABA1CE60D5E00D50DFF /* NetworkManager+Authenticators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkManager+Authenticators.swift"; sourceTree = "<group>"; };
 		F22A0ABC1CE660B300D50DFF /* LoginApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = SOURCE_ROOT; };
@@ -2693,6 +2699,7 @@
 				69E1CD001D7D7BA300531449 /* OEXRegistrationViewController+Swift.swift */,
 				B4B6D6451A95CF33000F44E8 /* OEXUserLicenseAgreementViewController.h */,
 				B4B6D6461A95CF33000F44E8 /* OEXUserLicenseAgreementViewController.m */,
+				E495C48A216FBBE9003842C8 /* SamlLoginViewController.swift */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -2771,6 +2778,7 @@
 				77ADF4A11AC1AF9800AC8955 /* OEXFacebookAuthProvider.h */,
 				77ADF4A21AC1AF9800AC8955 /* OEXFacebookAuthProvider.m */,
 				77ADF49F1AC1AD1200AC8955 /* OEXExternalAuthProvider.h */,
+				E4A1B747216E9BFA009ACFC0 /* SamlAuthProvider.swift */,
 			);
 			name = Providers;
 			sourceTree = "<group>";
@@ -3159,6 +3167,7 @@
 				E06292761F7BB452006D5EFC /* FabricKits.swift */,
 				2255C94D2111BADC005F7C8C /* ProgramConfig.swift */,
 				E40AEA72218D074600049C39 /* YoutubeConfig.swift */,
+				E4A1B743216E9395009ACFC0 /* SAMLConfig.swift */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -4759,6 +4768,7 @@
 				697B5A091D92DB3F002C3ABD /* RegistrationFormAPI.swift in Sources */,
 				77D6A9A41C28F32900E67CCF /* CoursesAPI.swift in Sources */,
 				778B40D91C2F62520009F33E /* EnrollmentManager.swift in Sources */,
+				E4A1B744216E9395009ACFC0 /* SAMLConfig.swift in Sources */,
 				22AB76181FFF62A80082F4EE /* CourseCertificateView.swift in Sources */,
 				774B393B1B5EEF8A00595D33 /* UIAlertController+Selection.swift in Sources */,
 				B7C5DB3820B6C73700D80AD2 /* PopularSubjectsViewController.swift in Sources */,
@@ -4788,6 +4798,7 @@
 				B7CCC73E209B16B100A66923 /* ConstraintMakerRelatable.swift in Sources */,
 				228CBD881ECF553E0054D063 /* CourseShareUtmParameters.swift in Sources */,
 				19A1339419CAAC21003ADD24 /* OEXClosedCaptionTableViewCell.m in Sources */,
+				E495C48B216FBBE9003842C8 /* SamlLoginViewController.swift in Sources */,
 				B4B6D6051A949EFC000F44E8 /* OEXRegistrationAgreement.m in Sources */,
 				7712732E1BA8F5C7008BA397 /* SegmentAnalyticsTracker.swift in Sources */,
 				776459821A09650C008404CC /* NSDictionary+OEXEncoding.m in Sources */,
@@ -4825,6 +4836,7 @@
 				F22A0ABD1CE660B300D50DFF /* LoginApi.swift in Sources */,
 				773181371B697644000CC050 /* DiscussionDataManager.swift in Sources */,
 				77AFD10B1C1A04C3001985FD /* UserAgentOverrideOverrideOperation.swift in Sources */,
+				E4A1B748216E9BFA009ACFC0 /* SamlAuthProvider.swift in Sources */,
 				77D5F43F1C1F1C8F0079E228 /* OEXCourse+TestData.swift in Sources */,
 				77ADF4AC1AC1F31200AC8955 /* OEXExternalAuthOptionsView.m in Sources */,
 				1A3F456C1BED00FB0077A40C /* IconButton.swift in Sources */,

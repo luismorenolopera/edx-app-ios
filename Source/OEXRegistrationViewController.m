@@ -165,6 +165,9 @@ NSString* const OEXExternalRegistrationWithExistingAccountNotification = @"OEXEx
     if(self.environment.config.facebookConfig.enabled) {
         [providers addObject:[[OEXFacebookAuthProvider alloc] init]];
     }
+    if(self.environment.config.samlProviderConfig.enabled) {
+        [providers addObject:[[SamlAuthProvider alloc] initWithEnvironment:self.environment authEntry:@"register"]];
+    }
     if(providers.count > 0) {
         OEXExternalRegistrationOptionsView* headingView = [[OEXExternalRegistrationOptionsView alloc] initWithFrame:CGRectZero providers:providers];
         headingView.delegate = self;
@@ -200,6 +203,7 @@ NSString* const OEXExternalRegistrationWithExistingAccountNotification = @"OEXEx
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [self handleSamlLogin];
     
     // Scrolling on keyboard hide and show
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -347,6 +351,11 @@ NSString* const OEXExternalRegistrationWithExistingAccountNotification = @"OEXEx
 #pragma mark ExternalRegistrationOptionsDelegate
 
 - (void)optionsView:(OEXExternalRegistrationOptionsView *)view choseProvider:(id<OEXExternalAuthProvider>)provider {
+    if ([provider isKindOfClass:[SamlAuthProvider class]]) {
+        SamlAuthProvider *samlProvider = provider;
+        [samlProvider initializeSamlViewControllerWithView:self];
+        return;
+    }
     [provider authorizeServiceFromController:self requestingUserDetails:YES withCompletion:^(NSString *accessToken, OEXRegisteringUserDetails *userDetails, NSError *error) {
         if(error == nil) {
             [view beginIndicatingActivity];
@@ -516,6 +525,14 @@ NSString* const OEXExternalRegistrationWithExistingAccountNotification = @"OEXEx
 
 - (BOOL) isRTL {
     return [UIApplication sharedApplication].userInterfaceLayoutDirection == UIUserInterfaceLayoutDirectionRightToLeft;
+}
+
+- (void)handleSamlLogin {
+    NSHTTPCookie *cookie = self.environment.session.sessionCookie;
+    OEXUserDetails *userDetails = self.environment.session.currentUser;
+    if (userDetails && cookie) {
+        [self.delegate registrationViewControllerDidRegister:self completion: nil];
+    }
 }
 
 @end
