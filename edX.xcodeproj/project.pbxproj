@@ -752,11 +752,11 @@
 		B7CCC73D209B16B100A66923 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCC71B209B16B000A66923 /* ConstraintLayoutSupportDSL.swift */; };
 		B7CCC73E209B16B100A66923 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCC71C209B16B000A66923 /* ConstraintMakerRelatable.swift */; };
 		B7CCC740209B1F9E00A66923 /* Default-375w-812h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7CCC73F209B1F9E00A66923 /* Default-375w-812h@3x.png */; };
+		BD0507AE20F74D4200B0DB65 /* OEXInterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0507AD20F74D4200B0DB65 /* OEXInterfaceTests.swift */; };
 		BD24CDB821072D1B00070807 /* logo-sub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD24CDB421072D1900070807 /* logo-sub@2x.png */; };
 		BD24CDB921072D1B00070807 /* logo-sub~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD24CDB521072D1A00070807 /* logo-sub~ipad.png */; };
 		BD24CDBA21072D1B00070807 /* logo-sub@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD24CDB621072D1A00070807 /* logo-sub@2x~ipad.png */; };
 		BD24CDBB21072D1B00070807 /* logo-sub@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD24CDB721072D1A00070807 /* logo-sub@3x.png */; };
-		BD0507AE20F74D4200B0DB65 /* OEXInterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0507AD20F74D4200B0DB65 /* OEXInterfaceTests.swift */; };
 		BD3838541DD1CA7E00805697 /* OEXFontsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3838531DD1CA7E00805697 /* OEXFontsTests.swift */; };
 		BD7C6C3E1DCA32370004D135 /* OEXFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C6C3D1DCA32360004D135 /* OEXFonts.swift */; };
 		BD7C6C401DCA329A0004D135 /* fonts.json in Resources */ = {isa = PBXBuildFile; fileRef = BD7C6C3F1DCA329A0004D135 /* fonts.json */; };
@@ -866,8 +866,8 @@
 		E0EEC6E71F1CD279006C8D62 /* whats_new.json in Resources */ = {isa = PBXBuildFile; fileRef = E0EEC6E91F1CD279006C8D62 /* whats_new.json */; };
 		E0FC64C31C85B492004E3E92 /* DiscussionDataParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FC64C11C85B46C004E3E92 /* DiscussionDataParsingTests.swift */; };
 		E0FCFCC91EC59DB2000B969C /* WhatsNewObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCFCC81EC59DB2000B969C /* WhatsNewObjectTests.swift */; };
-		E77C5C4E1FB9E4A200271A00 /* KPNService.m in Sources */ = {isa = PBXBuildFile; fileRef = E77C5C4D1FB9E4A200271A00 /* KPNService.m */; };
 		E0FF457920FDD24400109662 /* VideoCompletionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF457820FDD24400109662 /* VideoCompletionApi.swift */; };
+		E77C5C4E1FB9E4A200271A00 /* KPNService.m in Sources */ = {isa = PBXBuildFile; fileRef = E77C5C4D1FB9E4A200271A00 /* KPNService.m */; };
 		F22A0ABB1CE60D5E00D50DFF /* NetworkManager+Authenticators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A0ABA1CE60D5E00D50DFF /* NetworkManager+Authenticators.swift */; };
 		F22A0ABD1CE660B300D50DFF /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A0ABC1CE660B300D50DFF /* LoginApi.swift */; };
 		F2586E061CF5F8C7007C1118 /* NetworkManager+AuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2808CF91CF374FA002EAD1D /* NetworkManager+AuthenticatorTests.swift */; };
@@ -1783,6 +1783,7 @@
 		B7CCC71B209B16B000A66923 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		B7CCC71C209B16B000A66923 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		B7CCC73F209B1F9E00A66923 /* Default-375w-812h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-375w-812h@3x.png"; sourceTree = "<group>"; };
+		BD0507AD20F74D4200B0DB65 /* OEXInterfaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OEXInterfaceTests.swift; sourceTree = "<group>"; };
 		BD0874B820D901CC0056E35F /* cy */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = cy; path = cy.lproj/TermsOfServices.htm; sourceTree = "<group>"; };
 		BD0874B920D901CE0056E35F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = ar; path = ar.lproj/TermsOfServices.htm; sourceTree = "<group>"; };
 		BD0874BA20D901D30056E35F /* cy */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = cy; path = cy.lproj/PrivacyPolicy.htm; sourceTree = "<group>"; };
@@ -1793,7 +1794,6 @@
 		BD24CDB521072D1A00070807 /* logo-sub~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-sub~ipad.png"; sourceTree = "<group>"; };
 		BD24CDB621072D1A00070807 /* logo-sub@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-sub@2x~ipad.png"; sourceTree = "<group>"; };
 		BD24CDB721072D1A00070807 /* logo-sub@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-sub@3x.png"; sourceTree = "<group>"; };
-		BD0507AD20F74D4200B0DB65 /* OEXInterfaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OEXInterfaceTests.swift; sourceTree = "<group>"; };
 		BD3838531DD1CA7E00805697 /* OEXFontsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEXFontsTests.swift; sourceTree = "<group>"; };
 		BD7C6C3D1DCA32360004D135 /* OEXFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEXFonts.swift; sourceTree = "<group>"; };
 		BD7C6C3F1DCA329A0004D135 /* fonts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fonts.json; sourceTree = "<group>"; };
@@ -1945,6 +1945,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6BED2A84EE7E415F66730504 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77E6478A1C90C10300B6740D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -4055,6 +4062,7 @@
 			buildConfigurationList = BD9A0D881FBA014300AAEF0D /* Build configuration list for PBXNativeTarget "edXUITests" */;
 			buildPhases = (
 				BD9A0D7A1FBA014300AAEF0D /* Sources */,
+				6BED2A84EE7E415F66730504 /* Frameworks */,
 			);
 			buildRules = (
 			);
