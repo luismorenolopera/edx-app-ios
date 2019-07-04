@@ -85,7 +85,7 @@ public struct NetworkRequest<Out> {
                 headers: [String: String]? = nil,
                 deserializer : ResponseDeserializer<Out>) {
         self.method = method
-        self.path = path.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? path
+        self.path = path.starts(with: "http") ? path: path.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? path
         self.requiresAuth = requiresAuth
         self.body = body
         self.query = query
@@ -174,7 +174,7 @@ open class NetworkManager : NSObject {
         case outdatedVersionError = -2
     }
     
-    public static let NETWORK = "NETWORK" // Logger key
+    public static let NETWORK = "NETWORK" // Logger keydfsgdfgs
     
     public typealias JSONInterceptor = (_ _response : HTTPURLResponse, _ _json : JSON) -> Result<JSON>
     public typealias Authenticator = (_ _response: HTTPURLResponse?, _ _data: Data) -> AuthenticationAction
