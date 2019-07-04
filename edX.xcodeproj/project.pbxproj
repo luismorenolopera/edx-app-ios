@@ -849,10 +849,10 @@
 		E40AEA73218D074700049C39 /* YoutubeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40AEA72218D074600049C39 /* YoutubeConfig.swift */; };
 		E40AEA75218D076200049C39 /* YoutubeVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40AEA74218D076200049C39 /* YoutubeVideoPlayer.swift */; };
 		E473C3D0215E90E800D2ADEB /* YoutubeVideoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E473C3CF215E90E800D2ADEB /* YoutubeVideoPlayerTests.swift */; };
-		E4EE16F121DECAE400096F29 /* edX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BECB7B161924C0C3009C77F1 /* edX-Info.plist */; };
 		E495C48B216FBBE9003842C8 /* SamlLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E495C48A216FBBE9003842C8 /* SamlLoginViewController.swift */; };
 		E4A1B744216E9395009ACFC0 /* SAMLConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1B743216E9395009ACFC0 /* SAMLConfig.swift */; };
 		E4A1B748216E9BFA009ACFC0 /* SamlAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1B747216E9BFA009ACFC0 /* SamlAuthProvider.swift */; };
+		E4EE16F121DECAE400096F29 /* edX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BECB7B161924C0C3009C77F1 /* edX-Info.plist */; };
 		F22A0ABB1CE60D5E00D50DFF /* NetworkManager+Authenticators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A0ABA1CE60D5E00D50DFF /* NetworkManager+Authenticators.swift */; };
 		F22A0ABD1CE660B300D50DFF /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A0ABC1CE660B300D50DFF /* LoginApi.swift */; };
 		F2586E061CF5F8C7007C1118 /* NetworkManager+AuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2808CF91CF374FA002EAD1D /* NetworkManager+AuthenticatorTests.swift */; };
@@ -1807,6 +1807,8 @@
 		C7C088336C8983E1C003D89D /* libPods-edX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-edX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA6D884228A2E680040EF9C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CBA6D885228A2E680040EF9C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CBF03A4A22CE7B0B0041945E /* he */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = he; path = he.lproj/profiles.json; sourceTree = "<group>"; };
+		CBF03A4B22CE7B0E0041945E /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ar; path = ar.lproj/profiles.json; sourceTree = "<group>"; };
 		D403B266ACE25A256FD75605 /* Pods-edXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edXTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-edXTests/Pods-edXTests.release.xcconfig"; sourceTree = "<group>"; };
 		E00523421CF81D9800B7F5C3 /* DiscussionBlockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussionBlockViewController.swift; sourceTree = "<group>"; };
 		E00523441CFD768700B7F5C3 /* DiscussionBlockViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussionBlockViewControllerTests.swift; sourceTree = "<group>"; };
@@ -1886,11 +1888,11 @@
 		E40AEA72218D074600049C39 /* YoutubeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeConfig.swift; sourceTree = "<group>"; };
 		E40AEA74218D076200049C39 /* YoutubeVideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeVideoPlayer.swift; sourceTree = "<group>"; };
 		E473C3CF215E90E800D2ADEB /* YoutubeVideoPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoPlayerTests.swift; sourceTree = "<group>"; };
-		E4EE16F021DECAE400096F29 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
-		E4EE16F221DECAFF00096F29 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E495C48A216FBBE9003842C8 /* SamlLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamlLoginViewController.swift; sourceTree = "<group>"; };
 		E4A1B743216E9395009ACFC0 /* SAMLConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMLConfig.swift; sourceTree = "<group>"; };
 		E4A1B747216E9BFA009ACFC0 /* SamlAuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamlAuthProvider.swift; sourceTree = "<group>"; };
+		E4EE16F021DECAE400096F29 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E4EE16F221DECAFF00096F29 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E638C306F51AA4045D332D34 /* Pods-edXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-edXTests/Pods-edXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F22A0ABA1CE60D5E00D50DFF /* NetworkManager+Authenticators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkManager+Authenticators.swift"; sourceTree = "<group>"; };
 		F22A0ABC1CE660B300D50DFF /* LoginApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = SOURCE_ROOT; };
@@ -5145,6 +5147,8 @@
 			children = (
 				1A55019D1BBA30C900D5F9DD /* en */,
 				E08CC57C1F33269C0092ACED /* es-419 */,
+				CBF03A4A22CE7B0B0041945E /* he */,
+				CBF03A4B22CE7B0E0041945E /* ar */,
 			);
 			name = profiles.json;
 			sourceTree = "<group>";

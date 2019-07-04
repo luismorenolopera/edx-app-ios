@@ -3,12 +3,12 @@
     {
               "name" : "account_privacy",
               "label" : "يمكن لباقي الطلاب أن يروا بياناتي :",
-              "type" : "مفتاح",
-              "data_type" : "منطقية",
+              "type" : "switch",
+              "data_type" : "boolean",
               "options" : {
                 "values" : [
                             { "name" : "بشكل كامل", "value" : "all_users" },
-                            { "name" : "بشكل محدود",  "value" : "خصوصي" }
+                            { "name" : "بشكل محدود",  "value" : "private" }
                  ]
               },
               "instructions" : "الملف الشخصي المحدود يشارك فقط اسم المستخدم وصورة الملف الشخصي.",
@@ -17,7 +17,7 @@
     {
               "name" : "year_of_birth",
               "label" : "سنة الولادة",
-              "type" : "اختر",
+              "type" : "select",
               "options" : {
                 "range_min" : 1896,
                 "range_max" : 2015,
@@ -28,10 +28,10 @@
               "sub_instructions" : "لن يتم عرض هذا بشكل عام"
     },
     {
-              "name" : "البلد",
+              "name" : "country",
               "label" : "الدولة",
-              "type" : "اختر",
-              "data_type" : "البلد",
+              "type" : "select",
+              "data_type" : "country",
               "options" : {
                 "reference" : "البلدان",
                 "allows_none" : true,
@@ -41,8 +41,8 @@
     {
               "name" : "language_proficiencies",
               "label" : "اللغة الرئيسية",
-              "type" : "اختر",
-              "data_type" : "اللغة",
+              "type" : "select",
+              "data_type" : "languages",
               "options" : {
                 "reference" : "اللغات",
                 "allows_none" : true,
@@ -50,7 +50,7 @@
               }
     },
     {
-              "name" : "السيرة الذاتية",
+              "name" : "bio",
               "label" : "تفاصيل شخصية",
               "type" : "textarea",
               "placeholder" : "أنا أُودّ التعلّم..."

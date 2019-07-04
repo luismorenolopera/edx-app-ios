@@ -1,23 +1,23 @@
 {
     "fields":[
     {
-              "name" : "פרטיות_חשבון",
+              "name" : "account_privacy",
               "label" : "לומדים אחרים יוכלו לראות את הפרטים הבאים אודותיי:",
-              "type" : "החלף",
-              "data_type" : "בוליאן",
+              "type" : "switch",
+              "data_type" : "boolean",
               "options" : {
                 "values" : [
-                            { "name" : "פרופיל מלא", "value" : "כל_המשתמשים" },
-                            { "name" : "פרופיל חלקי",  "value" : "פרטי" }
+                            { "name" : "פרופיל מלא", "value" : "all_users" },
+                            { "name" : "פרופיל חלקי",  "value" : "private" }
                  ]
               },
               "instructions" : "פרופיל מוגבל משתף רק את שם המשתמש ותמונת הפרופיל שלכם.",
               "accessibility_hint" : "הגדירו איזה מידע מוצג לאחרים."
     },
     {
-              "name" : "שנת_לידה",
+              "name" : "year_of_birth",
               "label" : "שנת לידה",
-              "type" : "בחר\\י",
+              "type" : "select",
               "options" : {
                 "range_min" : 1896,
                 "range_max" : 2015,
@@ -28,10 +28,10 @@
               "sub_instructions" : "נתון זה לא יוצג באופן פומבי"
     },
     {
-              "name" : "מדינה",
+              "name" : "country",
               "label" : "מיקום",
-              "type" : "בחר",
-              "data_type" : "מדינה",
+              "type" : "select",
+              "data_type" : "country",
               "options" : {
                 "reference" : "מדינות",
                 "allows_none" : true,
@@ -39,10 +39,10 @@
               }
     },
     {
-              "name" : "מיומנות_שפות",
+              "name" : "language_proficiencies",
               "label" : "שפה ראשית",
-              "type" : "בחרו",
-              "data_type" : "שפה",
+              "type" : "select",
+              "data_type" : "language",
               "options" : {
                 "reference" : "שפות",
                 "allows_none" : true,
@@ -50,9 +50,9 @@
               }
     },
     {
-              "name" : "ביו",
+              "name" : "bio",
               "label" : "קצת עליי:",
-              "type" : "איזור טקסט",
+              "type" : "textarea",
               "placeholder" : "אני מעוניין\\ת ללמוד..."
     }
     ]
