@@ -33,7 +33,7 @@
               "type" : "select",
               "data_type" : "country",
               "options" : {
-                "reference" : "البلدان",
+                "reference" : "countries",
                 "allows_none" : true,
                 "none_label" : "لا يوجد موقع"
               }
@@ -42,9 +42,9 @@
               "name" : "language_proficiencies",
               "label" : "اللغة الرئيسية",
               "type" : "select",
-              "data_type" : "languages",
+              "data_type" : "language",
               "options" : {
-                "reference" : "اللغات",
+                "reference" : "languages",
                 "allows_none" : true,
                 "none_label" : "ال توجد لغة الأساسية"
               }

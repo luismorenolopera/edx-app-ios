@@ -33,7 +33,7 @@
               "type" : "select",
               "data_type" : "country",
               "options" : {
-                "reference" : "מדינות",
+                "reference" : "countries",
                 "allows_none" : true,
                 "none_label" : "אין מיקום"
               }
@@ -44,7 +44,7 @@
               "type" : "select",
               "data_type" : "language",
               "options" : {
-                "reference" : "שפות",
+                "reference" : "languages",
                 "allows_none" : true,
                 "none_label" : "אין שפה ראשית"
               }

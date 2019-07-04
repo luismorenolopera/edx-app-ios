@@ -295,7 +295,7 @@
 /* Label for posts pinned by Community TA(s)" */
 "COMMUNITY_TA"="עוזר הוראה בקהילה";
 /* Label indicating the amount of time a course will take */
-"COURSE_DETAIL.EFFORT"="מאמץ:";
+"COURSE_DETAIL.EFFORT"="משך זמן:";
 /* Label indicating when a course ends. */
 "COURSE_DETAIL.END_DATE"="תאריך סיום:";
 /* Button title allowing user to enroll in a course */
@@ -349,7 +349,7 @@
 /* Label indicated that a course has ended */
 "COURSE_ENDED"="Ended {end_date}";
 /* Label indicating that a course will end */
-"COURSE_ENDING"="Ending {end_date}";
+"COURSE_ENDING"="מסתיים {end_date}";
 /* Option to show all different types of course content. Constrasts with 'Show Videos Only'. */
 "COURSE_MODE_FULL"="הצג קורס מלא";
 /* Option to show only video course content. Constrasts with 'Show All Course Content'. */
@@ -712,7 +712,7 @@
 /* Label for posts pinned by Staff */
 "STAFF"="צוות";
 /* Label for date when course starts */
-"STARTING"="Starting {start_date}";
+"STARTING"="החל {start_date}";
 /* Info message text on the startup screen */
 "STARTUP.INFO_MESSAGE_TEXT"="קורסים בחינם מהאוניברסיטאות הטובות ביותר בעולם בכיס שלכם.";
 /*Placeholder text for search textfield on the startup screen*/
