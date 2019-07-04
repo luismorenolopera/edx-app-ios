@@ -1,0 +1,59 @@
+{
+    "fields":[
+    {
+              "name" : "account_privacy",
+              "label" : "يمكن لباقي الطلاب أن يروا بياناتي :",
+              "type" : "مفتاح",
+              "data_type" : "منطقية",
+              "options" : {
+                "values" : [
+                            { "name" : "بشكل كامل", "value" : "all_users" },
+                            { "name" : "بشكل محدود",  "value" : "خصوصي" }
+                 ]
+              },
+              "instructions" : "الملف الشخصي المحدود يشارك فقط اسم المستخدم وصورة الملف الشخصي.",
+              "accessibility_hint" : "تغيير المعلومات التي تتم مشاركتها مع الآخرين."
+    },
+    {
+              "name" : "year_of_birth",
+              "label" : "سنة الولادة",
+              "type" : "اختر",
+              "options" : {
+                "range_min" : 1896,
+                "range_max" : 2015,
+                "allows_none" : true,
+                "none_label" : "لا توجد سنة الولادة"
+              },
+              "instructions" : "يجب تحديد سنة الميلاد قبل أن تتمكن من مشاركة ملفك الشخصي بالكامل.",
+              "sub_instructions" : "لن يتم عرض هذا بشكل عام"
+    },
+    {
+              "name" : "البلد",
+              "label" : "الدولة",
+              "type" : "اختر",
+              "data_type" : "البلد",
+              "options" : {
+                "reference" : "البلدان",
+                "allows_none" : true,
+                "none_label" : "لا يوجد موقع"
+              }
+    },
+    {
+              "name" : "language_proficiencies",
+              "label" : "اللغة الرئيسية",
+              "type" : "اختر",
+              "data_type" : "اللغة",
+              "options" : {
+                "reference" : "اللغات",
+                "allows_none" : true,
+                "none_label" : "ال توجد لغة الأساسية"
+              }
+    },
+    {
+              "name" : "السيرة الذاتية",
+              "label" : "تفاصيل شخصية",
+              "type" : "textarea",
+              "placeholder" : "أنا أُودّ التعلّم..."
+    }
+    ]
+}

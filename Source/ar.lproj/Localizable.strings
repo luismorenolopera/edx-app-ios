@@ -255,7 +255,7 @@
 /* Title of course handouts section */
 "COURSE_HANDOUTS"="النشرات";
 /* Title of resources tab in course dashboardTabBar view */
-"RESOURSES"="Resources";
+"RESOURSES"="المزيد";
 /* Title of course important dates screen */
 "COURSEDATES.COURSE_IMPORTANT_DATES_TITLE"="Important Dates";
 /* Button text for cancelling any action */
@@ -329,23 +329,23 @@
 /* Message shown when there is no course dates */
 "COURSEDATES.COURSE_DATE_UNAVAILABLE"="مواعيد المساق غير متوفرة حاليا";
 /* Label for date when course starts */
-"COURSE.STARTING" = "Starting {start_date}";
+"STARTING" = "المساق مفتوح {start_date}";
 /* Label for date when course end */
-"COURSE.ENDING" = "Ending {end_date}";
+"COURSE_ENDING"="المساق على وشك الانتهاء {end_date}";
 /* Label indicated that a course has ended */
-"COURSE.ENDED"="Ended {end_date}";
+"COURSE_ENDED"="Ended {end_date}";
 /* Course audit will expires on date*/
-"COURSE.AUDIT.EXPIRES_ON" = "Course access expires on {expiry_date}";
+"COURSE_AUDIT.EXPIRES_ON" = "Course access expires on {expiry_date}";
 /* Course audit will expires in {time_duration}*/
-"COURSE.AUDIT.EXPIRES_IN" = "Course access expires in {time_duration}";
+"COURSE_AUDIT.EXPIRES_IN" = "Course access expires in {time_duration}";
 /* Course audit expired n days ago*/
-"COURSE.AUDIT.EXPIRED_DAYS_AGO" = "Course access expired {days} days ago";
+"COURSE_AUDIT.EXPIRED_DAYS_AGO" = "Course access expired {days} days ago";
 /* Course audit expired in less than 24 hours*/
-"COURSE.AUDIT.EXPIRED_AGO" = "Course access expired {time_duaration}";
+"COURSE_AUDIT.EXPIRED_AGO" = "Course access expired {time_duaration}";
 /* Course audit expired on date*/
-"COURSE.AUDIT.EXPIRED_ON" = "Course access expired on {expiry_date}";
+"COURSE_AUDIT.EXPIRED_ON" = "Course access expired on {expiry_date}";
 /* Course audit expiry in n number of days*/
-"COURSE.AUDIT.DAYS" = "{days} days";
+"COURSE_AUDIT.DAYS" = "{days} days";
 /* 1 hour remaining in course audit expiry*/
 /* More than 1 hours remaining in course audit expiry*/
 "COURSE_AUDIT_REMAINING_HOURS##{zero}" = "{hours} hours";
@@ -511,7 +511,7 @@
 /* Overlay message shown when facebook login fails because the user's account isn't linked */
 "FAILED_TO_LOAD_TOPICS"="فشل في تحميل المواضيع";
 /* Title of find courses screen */
-"FIND_COURSES"="استكشف المساقات";
+"FIND_COURSES"="جميع المساقات";
 /* No available courses on find courses section */
 "FIND_COURSES_NO_AVAILABLE_COURSES"="No available courses";
 /* Overlay message shown when enrolling in a course fails because the user is already in the course */
@@ -559,13 +559,13 @@
 /* Prompt leading user to sign in screen */
 "LOGIN_SPLASH_SIGN_IN"="لديك حساب بالفعل؟ سجل الدخول";
 /* Button title to log out the current user */
-"LOGOUT"="تسجيل الخروج";
+"LOGOUT"="الخروج";
 /* Option to sort discussion post list by most activity */
 "MOST_ACTIVITY"="مُعظم الأنشطة";
 /* Option to sort discussion post list by most votes */
 "MOST_VOTES"="مُعظم الأصوات";
 /* Screen title showing a user's courses */
-"COURSES"="Courses";
+"COURSES"="مساقات";
 /* Screen title showing a user's settings */
 "MY_SETTINGS"="إعداداتي";
 /* Marked as answer for endorsed responses */
@@ -784,7 +784,7 @@
 /* Explore Subjects button text on the first screen */
 "STARTUP_EXPLORE_SUBJECTS"="استكشف المواضيع";
 /* Button allowing user to submit feedback about the app via email */
-"SUBMIT_FEEDBACK.OPTION_TITLE" = "أرسل ملاحظاتك";
+"SUBMIT_FEEDBACK.OPTION_TITLE" = "للتواصل معنا";
 /* Support message email title */
 "SUBMIT_FEEDBACK.MESSAGE_SUBJECT" = "ملاحظات المستخدمين";
 /* Marker in feedback email meant to separate feedback from prepopulated device information */
@@ -885,3 +885,4 @@
 "WIFI_ONLY_DETAIL_MESSAGE" = "تحميل المواد والبيانات فقط عندما يكون الجهاز متصلاً بالـ Wi-Fi.";
 /* Alert dialog button title to confirm an action */
 "YES"="تأكيد";
+
