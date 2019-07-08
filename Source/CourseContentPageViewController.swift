@@ -282,7 +282,16 @@ public class CourseContentPageViewController : UIPageViewController, UIPageViewC
         if let currentController = viewControllers?.first,
             let nextController = self.siblingWithDirection(direction: direction, fromController: currentController)
         {
-            setPageControllers(with: [nextController], direction: direction, animated: true, completion: { [weak self] (finished) in
+            var animationDirection = direction
+            if UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft {
+                if direction == .forward {
+                    animationDirection = .reverse
+                }
+                else {
+                    animationDirection = .forward
+                }
+            }
+            setPageControllers(with: [nextController], direction: animationDirection, animated: true, completion: { [weak self] (finished) in
                 self?.updateTransitionState(is: false)
             })
         }

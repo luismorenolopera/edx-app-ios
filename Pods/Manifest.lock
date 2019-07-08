@@ -74,7 +74,7 @@ PODS:
     - GoogleAnalytics (~> 3.14)
     - GoogleIDFASupport (~> 3.14)
   - Smartling.i18n (1.0.13)
-  - youtube-ios-player-helper (0.1.6)
+  - YoutubePlayer-in-WKWebView (0.3.0)
 
 DEPENDENCIES:
   - Analytics (~> 3.0.0)
@@ -93,7 +93,7 @@ DEPENDENCIES:
   - OHHTTPStubs (~> 4.0)
   - Segment-GoogleAnalytics (~> 1.0.0)
   - Smartling.i18n (~> 1.0)
-  - youtube-ios-player-helper (~> 0.1.6)
+  - YoutubePlayer-in-WKWebView (~> 0.3.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -126,7 +126,7 @@ SPEC REPOS:
     - OHHTTPStubs
     - Segment-GoogleAnalytics
     - Smartling.i18n
-    - youtube-ios-player-helper
+    - YoutubePlayer-in-WKWebView
 
 SPEC CHECKSUMS:
   Analytics: b342fb4f43fa4f97ca6f4358b44d3295217ba294
@@ -158,8 +158,8 @@ SPEC CHECKSUMS:
   OHHTTPStubs: b393565822317305b87a1440d4c7aff131679f66
   Segment-GoogleAnalytics: ffea73c99196720b28b58ea93bcc0e6d11f172e1
   Smartling.i18n: 03ef7a5643965212c6ca9ed7d65385950ca4a989
-  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
+  YoutubePlayer-in-WKWebView: 17a33b2fa619d357c9ddd763942ce556660facae
 
-PODFILE CHECKSUM: cf0293d9e873edebb90e2cbe7bc6ddc7ab1bda83
+PODFILE CHECKSUM: 100b3b0f8dc5838cddf4dcee46265905bcd9d123
 
 COCOAPODS: 1.5.3

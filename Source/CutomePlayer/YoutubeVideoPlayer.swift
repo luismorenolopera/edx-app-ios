@@ -11,6 +11,7 @@ class YoutubeVideoPlayer: VideoPlayer {
     let playerView: WKYTPlayerView
     var videoId: String
     private var videoCurrentTime: Float
+    var transcripts: [AnyHashable: Any]
     
     private struct playVars {
         var playsinline = 0
@@ -38,6 +39,7 @@ class YoutubeVideoPlayer: VideoPlayer {
         playerView = WKYTPlayerView()
         videoId = String()
         videoCurrentTime = Float()
+        transcripts = Dictionary<AnyHashable,Any>()
         super.init(environment: environment)
         playerView.delegate = self
     }
