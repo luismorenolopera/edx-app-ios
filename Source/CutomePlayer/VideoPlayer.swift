@@ -32,7 +32,7 @@ class VideoPlayer: UIViewController,VideoPlayerControlsDelegate,TranscriptManage
     
     typealias Environment = OEXInterfaceProvider & OEXAnalyticsProvider & OEXStylesProvider
     
-    private let environment : Environment
+    let environment : Environment
     fileprivate var controls: VideoPlayerControls?
     weak var playerDelegate : VideoPlayerDelegate?
     var isFullScreen : Bool = false {
@@ -43,7 +43,7 @@ class VideoPlayer: UIViewController,VideoPlayerControlsDelegate,TranscriptManage
     fileprivate let playerView = PlayerView()
     private var timeObserver : AnyObject?
     fileprivate let player = AVPlayer()
-    private let loadingIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .white)
+    let loadingIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .white)
     private var lastElapsedTime: TimeInterval = 0
     private var transcriptManager: TranscriptManager?
     private let videoSkipBackwardsDuration: Double = 30
@@ -570,21 +570,6 @@ class VideoPlayer: UIViewController,VideoPlayerControlsDelegate,TranscriptManage
     deinit {
         removeObservers()
     }
-}
-
-extension VideoPlayer {
-    
-    var movieBackgroundFrame: CGRect {
-        if #available(iOS 11, *) {
-            if let safeBounds = fullScreenContainerView?.safeAreaLayoutGuide.layoutFrame {
-                return safeBounds
-            }
-        }
-        else if let containerBounds = fullScreenContainerView?.bounds {
-            return containerBounds
-        }
-        return .zero
-    }
     
     func setFullscreen(fullscreen: Bool, animated: Bool, with deviceOrientation: UIInterfaceOrientation, forceRotate rotate: Bool) {
         if !isVisible { return }
@@ -633,6 +618,21 @@ extension VideoPlayer {
                     })
             })
         }
+    }
+}
+
+extension VideoPlayer {
+    
+    var movieBackgroundFrame: CGRect {
+        if #available(iOS 11, *) {
+            if let safeBounds = fullScreenContainerView?.safeAreaLayoutGuide.layoutFrame {
+                return safeBounds
+            }
+        }
+        else if let containerBounds = fullScreenContainerView?.bounds {
+            return containerBounds
+        }
+        return .zero
     }
     
     func rotateMoviePlayer(for orientation: UIInterfaceOrientation, animated: Bool, forceRotate rotate: Bool, completion: (() -> Void)? = nil) {
