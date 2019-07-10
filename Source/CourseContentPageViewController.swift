@@ -216,6 +216,7 @@ public class CourseContentPageViewController : UIPageViewController, UIPageViewC
                 // animation to make the push transition work right
                 let actions : () -> Void = {
                     self?.navigationItem.title = item.block.displayName
+                    self?.navigationItem.rightBarButtonItem = nil
                     if self?.videoPlayer is YoutubeVideoPlayer{
                         let transcript = (self?.videoPlayer as! YoutubeVideoPlayer).transcripts
                         if transcript.count > 1{
@@ -342,6 +343,7 @@ public class CourseContentPageViewController : UIPageViewController, UIPageViewC
     
     func controllerForBlock(block : CourseBlock) -> UIViewController? {
         let blockViewController : UIViewController?
+        self.videoPlayer = VideoPlayer(environment: environment as! VideoPlayer.Environment)
         
         if let cachedViewController = self.cacheManager.getCachedViewControllerForBlockID(blockID: block.blockID) {
             blockViewController = cachedViewController

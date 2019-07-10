@@ -65,8 +65,20 @@ private class WKWebViewContentController : WebContentController {
         if let userAgent = UserDefaults.standard.string(forKey: "UserAgent"), webView.customUserAgent?.isEmpty ?? false {
             webView.customUserAgent = userAgent
         }
-    
+        setLanguageCookie(request: request)
         webView.load(request as URLRequest)
+    }
+    
+    func setLanguageCookie(request: NSURLRequest) {
+        let cookie = HTTPCookie(properties: [
+            .name: "openedx-language-preference",
+            .value: String(Locale.preferredLanguages[0].prefix(2)),
+            .path: "/",
+            .domain: "." + (request.url?.host)!])
+        
+        if #available(iOS 11.0, *) {
+            webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie!, completionHandler: nil)
+        }
     }
     
     func resetState() {
