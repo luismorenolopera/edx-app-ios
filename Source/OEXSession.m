@@ -36,6 +36,7 @@ static NSString* OEXSessionClearedCache = @"OEXSessionClearedCache";
 @property (nonatomic, strong) OEXAccessToken* token;
 @property (nonatomic, strong) OEXUserDetails* currentUser;
 @property (nonatomic, strong) id <OEXCredentialStorage> credentialStore;
+@property (nonatomic, strong) NSHTTPCookie* sessionCookie;
 
 @end
 
@@ -79,6 +80,9 @@ static NSString* OEXSessionClearedCache = @"OEXSessionClearedCache";
         self.token = tokenData;
         self.currentUser = userDetails;
         [[NSNotificationCenter defaultCenter] postNotificationName:OEXSessionStartedNotification object:nil userInfo:@{OEXSessionStartedUserDetailsKey : userDetails}];
+    } else if ([self validCookie] && userDetails) {
+        self.currentUser = userDetails;
+        [[NSNotificationCenter defaultCenter] postNotificationName:OEXSessionStartedNotification object:nil userInfo:@{OEXSessionStartedUserDetailsKey : userDetails}];
     }
     else {
         [self.credentialStore clear];
@@ -89,6 +93,7 @@ static NSString* OEXSessionClearedCache = @"OEXSessionClearedCache";
     [self.credentialStore clear];
     self.currentUser = nil;
     self.token = nil;
+    self.sessionCookie = nil;
     
     [[NSNotificationCenter defaultCenter] postNotificationName:OEXSessionEndedNotification object:nil];
 }
@@ -146,6 +151,33 @@ static NSString* OEXSessionClearedCache = @"OEXSessionClearedCache";
         }
     }
 
+}
+
+- (void)saveSessionCookies:(NSHTTPCookie*) sessionCookie userDetails:(OEXUserDetails*)userDetails {
+    [self.credentialStore saveSessionCookie:sessionCookie userDetails:userDetails];
+    
+    self.sessionCookie = sessionCookie;
+    self.currentUser = userDetails;
+    
+    if(sessionCookie != nil && userDetails != nil) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:OEXSessionStartedNotification object:nil userInfo:@{OEXSessionStartedUserDetailsKey : userDetails}];
+    }
+}
+
+- (BOOL)validCookie {
+    NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    for (NSHTTPCookie *cookie in [storage cookies]) {
+        if([cookie.name containsString:@"sessionid"]) {
+            NSDate *expiresDate = [cookie expiresDate];
+            NSDate *currentDate = [NSDate date];
+            NSComparisonResult result = [currentDate compare:expiresDate];
+            if(result==NSOrderedAscending){
+                self.sessionCookie = cookie;
+                return YES;
+            }
+        }
+    }
+    return NO;
 }
 
 @end
