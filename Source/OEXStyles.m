@@ -275,7 +275,14 @@ static OEXStyles* sSharedStyles;
     [styledHTML insertString:@"</head>" atIndex:0];
     [styledHTML insertString:@"<meta name = \"viewport\" content = \"width=device-width, initial-scale=1\"/>" atIndex:0];
     [styledHTML insertString:@"<head>" atIndex:0];
-    [styledHTML insertString:@"<html>" atIndex:0];
+    
+    if (UIApplication.sharedApplication.userInterfaceLayoutDirection == UIUserInterfaceLayoutDirectionLeftToRight) {
+        [styledHTML insertString:@"<html>" atIndex:0];
+    }
+    else {
+        [styledHTML insertString:@"<html dir='rtl'>" atIndex:0];
+    }
+    
     return styledHTML;
 }
 
