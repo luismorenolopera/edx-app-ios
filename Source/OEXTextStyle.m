@@ -175,6 +175,11 @@
                                                                documentAttributes:nil
                                                                             error:nil];
     [attributedText.mutableString replaceOccurrencesOfString:@"\n" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, attributedText.mutableString.length)];
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.alignment = NSTextAlignmentNatural;
+    [attributedText addAttribute:NSParagraphStyleAttributeName
+                           value:paragraphStyle
+                           range:NSMakeRange(0, attributedText.length)];
     return attributedText;
 }
 
