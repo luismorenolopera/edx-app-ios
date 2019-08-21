@@ -51,7 +51,7 @@
     },
     {
               "name" : "bio",
-              "label" : "קצת עליי:",
+              "label" : "קצת עליי",
               "type" : "textarea",
               "placeholder" : "אני מעוניין\\ת ללמוד..."
     }

@@ -333,7 +333,7 @@
 /* Label for date when course end */
 "COURSE_ENDING"="المساق على وشك الانتهاء {end_date}";
 /* Label indicated that a course has ended */
-"COURSE_ENDED"="Ended {end_date}";
+"COURSE_ENDED"="ينتهي بِ {end_date}";
 /* Course audit will expires on date*/
 "COURSE_AUDIT.EXPIRES_ON" = "Course access expires on {expiry_date}";
 /* Course audit will expires in {time_duration}*/

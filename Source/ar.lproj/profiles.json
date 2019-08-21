@@ -46,7 +46,7 @@
               "options" : {
                 "reference" : "languages",
                 "allows_none" : true,
-                "none_label" : "ال توجد لغة الأساسية"
+                "none_label" : "لا توجد لغة أساسيّة"
               }
     },
     {

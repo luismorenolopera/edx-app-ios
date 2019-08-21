@@ -33,7 +33,7 @@
 /* Accessibility hint for close button*/
 "ACCESSIBILITY.CLOSE_HINT" = "הקישו פעמיים לסגירה.";
 /* Accessibility label for posted data of discussion responses*/
-"ACCESSIBILITY.DISCUSSION_POSTED_ON" = "פורסם ב-{תאריך}";
+"ACCESSIBILITY.DISCUSSION_POSTED_ON" = "פורסם ב-{date}";
 /* Accessibility hint for Vote button for discussion responses*/
 "ACCESSIBILITY.DISCUSSION_VOTE_HINT" = "הקישו פעמיים להצביע.";
 /* Accessibility hint for Unvote button for discussion responses*/
@@ -347,7 +347,7 @@
 /* Text describing the course due date*/
 "COURSE_DUE_DATE"="להגשה ב-{due_date}";
 /* Label indicated that a course has ended */
-"COURSE_ENDED"="Ended {end_date}";
+"COURSE_ENDED"="הסתיים {end_date}";
 /* Label indicating that a course will end */
 "COURSE_ENDING"="מסתיים {end_date}";
 /* Option to show all different types of course content. Constrasts with 'Show Videos Only'. */
@@ -451,7 +451,7 @@
 /* Overlay message shown when facebook login fails because the user's account isn't linked */
 "FAILED_TO_LOAD_TOPICS"="טעינת הנושאים נכשלה.";
 /* Title of find courses screen */
-"FIND_COURSES"="חפש קורסים";
+"FIND_COURSES"="קטלוג";
 /* No available courses on find courses section */
 "FIND_COURSES_NO_AVAILABLE_COURSES"="אין קורסים זמינים";
 /* Overlay message shown when enrolling in a course fails because the user is already in the course */
@@ -505,7 +505,7 @@
 /* Option to sort discussion post list by most votes */
 "MOST_VOTES"="ההצבעות הרבות ביותר";
 /* Screen title showing a user's courses */
-"COURSES"="קורסים";
+"COURSES"="קורסים שלי";
 /* Screen title showing a user's settings */
 "MY_SETTINGS"="הגדרות שלי";
 /* Time Label in My Videos section*/
@@ -557,7 +557,7 @@
 /* Button label to bring up course finder */
 "OR_SIGN_IN_WITH"="או התחבר באמצעות";
 /* Login screen password field title text */
-"PASSWORD_TITLE_TEXT" = "Password";
+"PASSWORD_TITLE_TEXT" = "סיסמה";
 /* Alert dialog button shown when finishing a video to ask if user should continue by watching the next video */
 "PLAYBACK_COMPLETE_CONTINUE"="המשך";
 /* Alert dialog button shown when finishing a video to ask if user should continue by watching the next video (negative option) */
@@ -766,7 +766,7 @@
 /* Placeholder title for course content with no title */
 "UNTITLED"="ללא כותרת";
 /* Title text for login field */
-"USERNAME_TITLE_TEXT" = "Username or e-mail address";
+"USERNAME_TITLE_TEXT" = "שם משתמש או דואר אלקטרוני";
 /*Error message when operation failed with unknow error*/
 "UNKNOWN_ERROR" = "לא ניתן היה להשלים את הפעולה שלכם.";
 /* Screen title showing a user's account */
