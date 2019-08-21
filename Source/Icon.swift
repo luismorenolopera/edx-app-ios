@@ -308,12 +308,17 @@ public enum Icon {
         let bounds = renderer.boundsWithAttributes(attributes: attributes as [String : AnyObject], inline: inline)
         let imageSize = bounds.size
         
-        UIGraphicsBeginImageContextWithOptions(CGSize(width: imageSize.width, height: imageSize.height), false, 0)
-
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: imageSize.width, height: imageSize.height), false, 0)    
+        
         if renderer.shouldFlip {
-            let context = UIGraphicsGetCurrentContext()
-            context!.translateBy(x: imageSize.width, y: 0)
-            context!.scaleBy(x: -1, y: 1)
+            switch self {
+            case .Question:
+                break
+            default:
+                let context = UIGraphicsGetCurrentContext()
+                context!.translateBy(x: imageSize.width, y: 0)
+                context!.scaleBy(x: -1, y: 1)
+            }
         }
         
         renderer.drawWithAttributes(attributes: attributes as [String : AnyObject], inContext: UIGraphicsGetCurrentContext()!)
