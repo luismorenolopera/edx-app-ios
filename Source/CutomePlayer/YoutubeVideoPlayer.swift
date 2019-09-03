@@ -55,6 +55,12 @@ class YoutubeVideoPlayer: VideoPlayer {
         createYoutubePlayer()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        playerView.stopVideo()
+        UINavigationBar.appearance().barTintColor = barTintColor
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         playerView.stopVideo()
