@@ -4,13 +4,13 @@
     "primaryBaseColor":"#3764f0",
     "primaryLightColor":"#4CA1D0",
     "primaryXLightColor":"#D9EBF5",
-    
+
     "secondaryXDarkColor":"#fac800",
     "secondaryDarkColor":"#fac800",
     "secondaryBaseColor":"#fac800",
     "secondaryLightColor":"#DA8AAF",
     "secondaryXLightColor":"#EFCDDC",
-    
+
     "neutralBlack":"#101010",
     "neutralBlackT":"#000000",
     "neutralXDark":"#424141",
@@ -21,7 +21,7 @@
     "neutralXXLight":"#F2F2F2",
     "neutralWhite":"#FCFCFC",
     "neutralWhiteT":"#FFFFFF",
-    
+
     "utilitySuccessDark":"#1E8142",
     "utilitySuccessBase":"#25B85A",
     "utilitySuccessLight":"#6CCF90",
