@@ -42,14 +42,7 @@
     [self.signInButton.titleLabel setFont:[self.environment.styles boldSansSerifOfSize:14.0f]];
     [self.signInButton setAccessibilityIdentifier:@"LoginSpashViewController:sign-in-button"];
     [self.signInButton setAccessibilityIdentifier:@"LoginSpashViewController:sign-up-button"];
-    if (self.environment.config.invertColorLoginSlpashViewSignInBtn) {
-        [self.signInButton setTitleColor:[self.environment.styles neutralBlack] forState:UIControlStateNormal];
-        [self.signInButton setTitleColor:[self.environment.styles neutralBlack] forState:UIControlStateSelected];
-    }
-    
-    if (!self.environment.config.useLogoSub) {
-        [self.logoSub setHidden:YES];
-    }
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
