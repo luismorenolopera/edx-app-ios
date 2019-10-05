@@ -749,13 +749,13 @@
 		B7CCC73D209B16B100A66923 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCC71B209B16B000A66923 /* ConstraintLayoutSupportDSL.swift */; };
 		B7CCC73E209B16B100A66923 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCC71C209B16B000A66923 /* ConstraintMakerRelatable.swift */; };
 		B7CCC740209B1F9E00A66923 /* Default-375w-812h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7CCC73F209B1F9E00A66923 /* Default-375w-812h@3x.png */; };
+		B7EC83BF21A2D34600D6A89C /* ProgramsDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EC83BE21A2D34600D6A89C /* ProgramsDiscoveryViewController.swift */; };
+		B7EC83C121A2DE9E00D6A89C /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EC83C021A2DE9E00D6A89C /* DiscoveryViewController.swift */; };
+		BD0507AE20F74D4200B0DB65 /* OEXInterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0507AD20F74D4200B0DB65 /* OEXInterfaceTests.swift */; };
 		BD24CDB821072D1B00070807 /* logo-sub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD24CDB421072D1900070807 /* logo-sub@2x.png */; };
 		BD24CDB921072D1B00070807 /* logo-sub~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD24CDB521072D1A00070807 /* logo-sub~ipad.png */; };
 		BD24CDBA21072D1B00070807 /* logo-sub@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD24CDB621072D1A00070807 /* logo-sub@2x~ipad.png */; };
 		BD24CDBB21072D1B00070807 /* logo-sub@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD24CDB721072D1A00070807 /* logo-sub@3x.png */; };
-		B7EC83BF21A2D34600D6A89C /* ProgramsDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EC83BE21A2D34600D6A89C /* ProgramsDiscoveryViewController.swift */; };
-		B7EC83C121A2DE9E00D6A89C /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EC83C021A2DE9E00D6A89C /* DiscoveryViewController.swift */; };
-		BD0507AE20F74D4200B0DB65 /* OEXInterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0507AD20F74D4200B0DB65 /* OEXInterfaceTests.swift */; };
 		BD3838541DD1CA7E00805697 /* OEXFontsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3838531DD1CA7E00805697 /* OEXFontsTests.swift */; };
 		BD7C6C3E1DCA32370004D135 /* OEXFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C6C3D1DCA32360004D135 /* OEXFonts.swift */; };
 		BD7C6C401DCA329A0004D135 /* fonts.json in Resources */ = {isa = PBXBuildFile; fileRef = BD7C6C3F1DCA329A0004D135 /* fonts.json */; };
@@ -870,8 +870,8 @@
 		E0EEC6E71F1CD279006C8D62 /* whats_new.json in Resources */ = {isa = PBXBuildFile; fileRef = E0EEC6E91F1CD279006C8D62 /* whats_new.json */; };
 		E0FC64C31C85B492004E3E92 /* DiscussionDataParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FC64C11C85B46C004E3E92 /* DiscussionDataParsingTests.swift */; };
 		E0FCFCC91EC59DB2000B969C /* WhatsNewObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCFCC81EC59DB2000B969C /* WhatsNewObjectTests.swift */; };
-		E77C5C4E1FB9E4A200271A00 /* KPNService.m in Sources */ = {isa = PBXBuildFile; fileRef = E77C5C4D1FB9E4A200271A00 /* KPNService.m */; };
 		E0FF457920FDD24400109662 /* VideoCompletionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF457820FDD24400109662 /* VideoCompletionApi.swift */; };
+		E77C5C4E1FB9E4A200271A00 /* KPNService.m in Sources */ = {isa = PBXBuildFile; fileRef = E77C5C4D1FB9E4A200271A00 /* KPNService.m */; };
 		F22A0ABB1CE60D5E00D50DFF /* NetworkManager+Authenticators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A0ABA1CE60D5E00D50DFF /* NetworkManager+Authenticators.swift */; };
 		F22A0ABD1CE660B300D50DFF /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A0ABC1CE660B300D50DFF /* LoginApi.swift */; };
 		F2586E061CF5F8C7007C1118 /* NetworkManager+AuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2808CF91CF374FA002EAD1D /* NetworkManager+AuthenticatorTests.swift */; };
@@ -1783,6 +1783,9 @@
 		B7CCC71B209B16B000A66923 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		B7CCC71C209B16B000A66923 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		B7CCC73F209B1F9E00A66923 /* Default-375w-812h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-375w-812h@3x.png"; sourceTree = "<group>"; };
+		B7EC83BE21A2D34600D6A89C /* ProgramsDiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsDiscoveryViewController.swift; sourceTree = "<group>"; };
+		B7EC83C021A2DE9E00D6A89C /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		BD0507AD20F74D4200B0DB65 /* OEXInterfaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OEXInterfaceTests.swift; sourceTree = "<group>"; };
 		BD0874B820D901CC0056E35F /* cy */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = cy; path = cy.lproj/TermsOfServices.htm; sourceTree = "<group>"; };
 		BD0874B920D901CE0056E35F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = ar; path = ar.lproj/TermsOfServices.htm; sourceTree = "<group>"; };
 		BD0874BA20D901D30056E35F /* cy */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = cy; path = cy.lproj/PrivacyPolicy.htm; sourceTree = "<group>"; };
@@ -1793,9 +1796,6 @@
 		BD24CDB521072D1A00070807 /* logo-sub~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-sub~ipad.png"; sourceTree = "<group>"; };
 		BD24CDB621072D1A00070807 /* logo-sub@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-sub@2x~ipad.png"; sourceTree = "<group>"; };
 		BD24CDB721072D1A00070807 /* logo-sub@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-sub@3x.png"; sourceTree = "<group>"; };
-		B7EC83BE21A2D34600D6A89C /* ProgramsDiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsDiscoveryViewController.swift; sourceTree = "<group>"; };
-		B7EC83C021A2DE9E00D6A89C /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
-		BD0507AD20F74D4200B0DB65 /* OEXInterfaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OEXInterfaceTests.swift; sourceTree = "<group>"; };
 		BD3838531DD1CA7E00805697 /* OEXFontsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEXFontsTests.swift; sourceTree = "<group>"; };
 		BD7C6C3D1DCA32360004D135 /* OEXFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEXFonts.swift; sourceTree = "<group>"; };
 		BD7C6C3F1DCA329A0004D135 /* fonts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fonts.json; sourceTree = "<group>"; };
@@ -4178,7 +4178,7 @@
 						TestTargetID = BECB7B0A1924C0C3009C77F1;
 					};
 					BECB7B0A1924C0C3009C77F1 = {
-						DevelopmentTeam = 57UCUYGPA2;
+						DevelopmentTeam = 773JA72FQU;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -4272,7 +4272,6 @@
 				69ECC60F1D50D1170030CF87 /* arrow_next@2x.png in Resources */,
 				B7C5DB5C20BB4AAC00D80AD2 /* TestSubjects.json in Resources */,
 				69ECC6451D50D1170030CF87 /* separator.png in Resources */,
-				2245CA00209C59340097B23F /* TermsOfServices.htm in Resources */,
 				BD24CDBB21072D1B00070807 /* logo-sub@3x.png in Resources */,
 				69ECC6131D50D1170030CF87 /* loginScreenImage.png in Resources */,
 				E0E27FC21EC469A800D1AEFE /* WhatsNew.json in Resources */,
@@ -5475,10 +5474,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = edX.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Distribution Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				DEVELOPMENT_TEAM = 57UCUYGPA2;
+				DEVELOPMENT_TEAM = 773JA72FQU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5498,10 +5498,9 @@
 				);
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = org.edx.mobile;
+				PRODUCT_BUNDLE_IDENTIFIER = org.proversity.wsl;
 				PRODUCT_NAME = edX;
-				PROVISIONING_PROFILE = "1e8e4e06-34c2-48a7-8182-4f4216359bc2";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore org.edx.mobile";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/edX-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
@@ -6006,7 +6005,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				DEVELOPMENT_TEAM = 57UCUYGPA2;
+				DEVELOPMENT_TEAM = 773JA72FQU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6025,10 +6024,9 @@
 				);
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = org.edx.mobile;
+				PRODUCT_BUNDLE_IDENTIFIER = org.proversity.wsl;
 				PRODUCT_NAME = edX;
-				PROVISIONING_PROFILE = "aea18a23-fe25-4446-9e19-291ffb82c59f";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development org.edx.mobile";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/edX-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -6046,10 +6044,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = edX.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				DEVELOPMENT_TEAM = 57UCUYGPA2;
+				DEVELOPMENT_TEAM = 773JA72FQU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6069,10 +6068,9 @@
 				);
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = org.edx.mobile;
+				PRODUCT_BUNDLE_IDENTIFIER = org.proversity.wsl;
 				PRODUCT_NAME = edX;
-				PROVISIONING_PROFILE = "1e8e4e06-34c2-48a7-8182-4f4216359bc2";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore org.edx.mobile";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/edX-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
