@@ -38,6 +38,7 @@ class VideoBlockViewController : UIViewController, CourseBlockViewController, St
         }else{
             videoController = VideoPlayer(environment: environment)
         }
+        videoController.videoTitle = block.value?.displayName ?? Strings.untitled
         super.init(nibName: nil, bundle: nil)
         addChildViewController(videoController)
         videoController.didMove(toParentViewController: self)
