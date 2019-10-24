@@ -40,7 +40,7 @@ private class StatusMessageView : UIView {
     }
     
     private var statusMessageStyle: OEXMutableTextStyle {
-        let style = OEXMutableTextStyle(weight: .normal, size: .base, color: UIColor.white)
+        let style = OEXMutableTextStyle(weight: .normal, size: .small, color: UIColor.white)
         style.alignment = .center;
         style.lineBreakMode = NSLineBreakMode.byWordWrapping;
         return style;
@@ -48,7 +48,7 @@ private class StatusMessageView : UIView {
     }
 }
 
-private let visibleDuration: TimeInterval = 5.0
+private let visibleDuration: TimeInterval = 2.0
 private let animationDuration: TimeInterval = 1.0
 
 extension UIViewController {
