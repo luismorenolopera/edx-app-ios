@@ -265,6 +265,10 @@ class VideoBlockViewController : UIViewController, CourseBlockViewController, St
         DispatchQueue.main.async {[weak self] _ in
             self?.loadController.state = .Loaded
         }
+        if environment.config.isVideoTranscriptEnabled && !(video.summary?.showCaptions ?? true) {
+            contentView?.willRemoveSubview(videoTranscriptView!.transcriptTableView)
+            videoTranscriptView = nil
+        }
         videoController.play(video: video)
     }
     

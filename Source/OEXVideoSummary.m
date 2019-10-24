@@ -31,6 +31,7 @@
 @property (nonatomic, copy) NSString* videoID;
 @property (nonatomic, copy) NSString* unitURL;
 @property (nonatomic, assign) BOOL onlyOnWeb;
+@property (nonatomic, assign) BOOL showCaptions;
 @property (nonatomic, strong) NSDictionary* transcripts;
 @property (nonatomic, strong) OEXVideoEncoding *defaultEncoding;
 @property (nonatomic, strong) NSMutableArray *supportedEncodings;
@@ -79,6 +80,7 @@
         self.duration = [OEXSafeCastAsClass([summary objectForKey:@"duration"], NSNumber) doubleValue];
         
         self.onlyOnWeb = [[summary objectForKey:@"only_on_web"] boolValue];
+        self.showCaptions = [[summary objectForKey:@"show_captions"] boolValue];
         
         self.transcripts = [summary objectForKey:@"transcripts"];
         
