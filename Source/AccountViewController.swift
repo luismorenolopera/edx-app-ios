@@ -149,6 +149,9 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
         if (indexPath.row == AccountviewOptions.Profile.rawValue && !environment.config.profilesEnabled)  {
             return 0
         }
+        else if (indexPath.row == AccountviewOptions.SubmitFeedback.rawValue && environment.config.feedbackEmailAddress() == "") {
+            return 0
+        }
         
         return tableView.estimatedRowHeight
     }
