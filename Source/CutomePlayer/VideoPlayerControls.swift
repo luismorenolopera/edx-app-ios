@@ -411,8 +411,12 @@ class VideoPlayerControls: UIView, VideoPlayerSettingsDelegate {
     @objc func autoHide() {
         NSObject.cancelPreviousPerformRequests(withTarget: self)
         if !UIAccessibilityIsVoiceOverRunning() {
-            perform(#selector(hideAndShowControls(isHidden:)), with: 1, afterDelay: 3.0)
+            perform(#selector(hideControls), with: nil, afterDelay: 3.0)
         }
+    }
+    
+    @objc func hideControls(){
+        hideAndShowControls(isHidden: true)
     }
     
     @objc func hideAndShowControls(isHidden: Bool) {
