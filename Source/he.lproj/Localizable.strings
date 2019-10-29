@@ -167,7 +167,7 @@
 /* Add your post button title used in discussion's add a post textview */
 "ADD_YOUR_POST"="הוסיפו את הפוסט שלכם";
 /*Agreement text*/
-"AGREEMENT.TEXT"="אתם מסכימים ל-{eula} ול-{tos} ומאשרים שקראתם את {privacy_policy}.";
+"AGREEMENT.TEXT"="אתם מסכימים ל-{tos} ומאשרים שקראתם את {privacy_policy}.";
 /*Agreement text prefix for user on signin screen*/
 "AGREEMENT.TEXT_PREFIX_SIGNIN"="עם הכניסה לאפליקציה,";
 /*Agreement text prefix for user on signup screen*/
