@@ -61,12 +61,21 @@ import WebKit
         guard let url = webView.request?.URLString else {
             return
         }
+        if url.contains(find: "https://mycourses.pearsonx.com/dashboard") {
+            webView.isHidden = true
+            let path = NSString.oex_string(withFormat: SAML_PROVIDER_URL, parameters: ["idpSlug": environment.config.samlProviderConfig.samlIdpSlug, "authEntry": authEntry])
+            if let url = URL(string: (environment.config.apiHostURL()?.absoluteString)!+path) {
+                let request = URLRequest(url: url)
+                webView.loadRequest(request)
+            }
+            return
+        }
         if url.contains(find: (environment.config.apiHostURL()?.absoluteString)!) {
             guard  let cookies = HTTPCookieStorage.shared.cookies else {
                 return
             }
             for cookie in cookies {
-                if cookie.name.contains("sessionid"){
+                if cookie.name.contains("pfn-prod.proversity.org"){
                     self.sessionCookie = cookie
                     getUserDetails(sessionCookie: cookie)
 

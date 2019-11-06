@@ -167,7 +167,7 @@ static NSString* OEXSessionClearedCache = @"OEXSessionClearedCache";
 - (BOOL)validCookie {
     NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
     for (NSHTTPCookie *cookie in [storage cookies]) {
-        if([cookie.name containsString:@"sessionid"]) {
+        if([cookie.name containsString:@"pfn-prod.proversity.org_edxapp"]) {
             NSDate *expiresDate = [cookie expiresDate];
             NSDate *currentDate = [NSDate date];
             NSComparisonResult result = [currentDate compare:expiresDate];
