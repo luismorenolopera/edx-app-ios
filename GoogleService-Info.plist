@@ -3,34 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>will be filled from config</string>
+	<string>51872336990-elat5t4r414ggan0t7m9oo9nscg26eqd.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>optional and will be filled from config if specified in config</string>
+	<string>com.googleusercontent.apps.51872336990-elat5t4r414ggan0t7m9oo9nscg26eqd</string>
 	<key>API_KEY</key>
-	<string>will be filled from config</string>
+	<string>AIzaSyDABdBEoikaw7vhbQN1vn9fJSE6k4P0VUg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>will be filled from config</string>
+	<string>51872336990</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>net.inglescorporativo.online</string>
+	<string>io.edunext.zzz</string>
 	<key>PROJECT_ID</key>
-	<string>ingles-corporativo-mobile-app</string>
+	<string>io-edunext-zzz</string>
 	<key>STORAGE_BUCKET</key>
-	<string>ingles-corporativo-mobile-app.appspot.com</string>
+	<string>io-edunext-zzz.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>will be filled from config</string>
+	<string>1:51872336990:ios:a9a0cd3de09c8a9874f8cf</string>
 	<key>DATABASE_URL</key>
-	<string>https://ingles-corporativo-mobile-app.firebaseio.com</string>
+	<string>https://io-edunext-zzz.firebaseio.com</string>
 </dict>
 </plist>
